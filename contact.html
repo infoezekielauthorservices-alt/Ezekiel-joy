@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Ezekiel Joy Book Marketing</title>
+    <meta name="description" content="Get in touch with Ezekiel Joy to discuss your book marketing project. Share your book details and goals, and receive a thoughtful reply with recommendations and next steps.">
+
+    <link rel="icon" type="image/png" href="my logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION (logo shown on Contact page) ===== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="my logo.png" alt="Ezekiel Joy Book Marketing logo" class="brand-logo">
+                <span class="brand-text">
+                    <span class="brand-name">Ezekiel Joy</span>
+                    <span class="brand-tag">Book Marketing</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html" class="active">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="crumbs">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact Me</span>
+            </div>
+            <span class="eyebrow">Get in Touch</span>
+            <h1>Let's Talk About Your Book.</h1>
+            <p>Share a few details about your project using the form below, or write to me directly. I read every enquiry personally and will reply with thoughtful recommendations as soon as I can.</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info reveal">
+                    <span class="eyebrow">Contact Details</span>
+                    <h2 class="section-title">Reach Out Directly.</h2>
+                    <p>
+                        Whether you are preparing a new launch, promoting a backlist title, or still deciding where to begin, I would be glad to hear about your project. The more detail you share, the more useful my reply will be.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Email</span>
+                        <a href="mailto:info.ezekielauthorservices@gmail.com">info.ezekielauthorservices@gmail.com</a>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Response Time</span>
+                        <span>Typically within 1 to 2 business days</span>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Working With</span>
+                        <span>Authors worldwide, across fiction and nonfiction genres</span>
+                    </div>
+
+                    <p style="margin-top: 2rem; font-size: 0.95rem;">
+                        Prefer to read more before reaching out? Explore the <a href="services.html" style="color: var(--gold-deep); font-weight: 600;">Services</a> or <a href="pricing.html" style="color: var(--gold-deep); font-weight: 600;">Pricing</a> pages first.
+                    </p>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrap reveal">
+                    <h3>Send a Project Enquiry</h3>
+                    <p>Fill in the details below and I will reply with my recommendations and the next steps.</p>
+
+                    <form
+                        id="contactForm"
+                        action="https://formspree.io/f/mwlokngo"
+                        method="POST"
+                        novalidate
+                    >
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="Full Name" required autocomplete="name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="Email" required autocomplete="email">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="bookTitle">Book Title <span class="required">*</span></label>
+                                <input type="text" id="bookTitle" name="Book Title" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="bookGenre">Book Genre <span class="required">*</span></label>
+                                <input type="text" id="bookGenre" name="Book Genre" placeholder="e.g. Fantasy, Memoir, Thriller" required>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="service">Service Required <span class="required">*</span></label>
+                            <select id="service" name="Service Required" required>
+                                <option value="">Please select a service</option>
+                                <option value="Book Branding and Creative Design">Book Branding and Creative Design</option>
+                                <option value="Book Promotion and Advertising">Book Promotion and Advertising</option>
+                                <option value="Reader Outreach and Audience Development">Reader Outreach and Audience Development</option>
+                                <option value="Amazon and Book Discoverability">Amazon and Book Discoverability</option>
+                                <option value="Author Brand and Digital Presence">Author Brand and Digital Presence</option>
+                                <option value="Publicity and Media Outreach">Publicity and Media Outreach</option>
+                                <option value="Marketing Strategy and Campaign Management">Marketing Strategy and Campaign Management</option>
+                                <option value="Essential Book Promotion Package">Essential Book Promotion Package</option>
+                                <option value="Professional Book Marketing Package">Professional Book Marketing Package</option>
+                                <option value="Comprehensive Book Marketing Package">Comprehensive Book Marketing Package</option>
+                                <option value="Not sure yet / Please advise">Not sure yet, please advise</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="description">Brief Project Description <span class="required">*</span></label>
+                            <textarea id="description" name="Project Description" required placeholder="Tell me about your book, your goals, your timeline, and anything you would like me to know."></textarea>
+                        </div>
+
+                        <!-- Honeypot anti-spam field -->
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+                        <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+                            <span class="btn-label">Send Enquiry</span>
+                        </button>
+
+                        <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h3 class="footer-name">Ezekiel Joy</h3>
+                <p class="footer-tag">Professional Book Marketing</p>
+                <p class="footer-blurb">Helping authors build visibility, reach relevant readers, and promote their books with strategy and care.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info.ezekielauthorservices@gmail.com">info.ezekielauthorservices@gmail.com</a></li>
+                    <li><a href="contact.html">Send an enquiry</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; <span id="year"></span> Ezekiel Joy. All rights reserved.</p>
+                <p>Professional book marketing for authors worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SHARED INLINE SCRIPT ===== -->
+    <script>
+        // Mobile nav
+        const navToggle = document.getElementById('navToggle');
+        const siteNav = document.getElementById('siteNav');
+        if (navToggle && siteNav) {
+            navToggle.addEventListener('click', () => {
+                const open = siteNav.classList.toggle('is-open');
+                navToggle.classList.toggle('is-active', open);
+                navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                document.body.classList.toggle('nav-open', open);
+            });
+
+            siteNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    siteNav.classList.remove('is-open');
+                    navToggle.classList.remove('is-active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('nav-open');
+                });
+            });
+        }
+
+        // Header on scroll
+        const header = document.getElementById('siteHeader');
+        const onScroll = () => {
+            if (window.scrollY > 20) header.classList.add('is-scrolled');
+            else header.classList.remove('is-scrolled');
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        // Reveal on scroll
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const revealEls = document.querySelectorAll('.reveal');
+        if (prefersReduced) {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        } else if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('is-visible'), i * 60);
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            revealEls.forEach(el => io.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        }
+
+        // Footer year
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // ===== Contact form handling =====
+        const form = document.getElementById('contactForm');
+        const feedback = document.getElementById('formFeedback');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnLabel = submitBtn.querySelector('.btn-label');
+
+        const clearFieldErrors = () => {
+            form.querySelectorAll('.field-error').forEach(el => el.remove());
+            form.querySelectorAll('.has-error').forEach(el => el.classList.remove('has-error'));
+        };
+
+        const showFieldError = (field, message) => {
+            const wrap = field.closest('.form-field');
+            if (!wrap) return;
+            wrap.classList.add('has-error');
+            const err = document.createElement('span');
+            err.className = 'field-error';
+            err.textContent = message;
+            wrap.appendChild(err);
+        };
+
+        const validateEmail = (value) => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+        };
+
+        const setFeedback = (type, message) => {
+            feedback.className = 'form-feedback ' + type;
+            feedback.textContent = message;
+        };
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            clearFieldErrors();
+            feedback.className = 'form-feedback';
+            feedback.textContent = '';
+
+            let isValid = true;
+
+            const requiredFields = form.querySelectorAll('[required]');
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    showFieldError(field, 'This field is required.');
+                    isValid = false;
+                }
+            });
+
+            const emailField = document.getElementById('email');
+            if (emailField.value.trim() && !validateEmail(emailField.value.trim())) {
+                showFieldError(emailField, 'Please enter a valid email address.');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                setFeedback('error', 'Please check the highlighted fields and try again.');
+                const firstError = form.querySelector('.has-error');
+                if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+
+            // Submit via fetch to Formspree
+            submitBtn.disabled = true;
+            btnLabel.textContent = 'Sending...';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    setFeedback('success', 'Thank you. Your enquiry has been sent successfully. I will reply as soon as I can.');
+                    form.reset();
+                } else {
+                    const data = await response.json().catch(() => ({}));
+                    const msg = (data && data.errors && data.errors.map(x => x.message).join(', '))
+                        || 'Something went wrong while sending your enquiry. Please try again, or email me directly.';
+                    setFeedback('error', msg);
+                }
+            } catch (err) {
+                setFeedback('error', 'A network error occurred. Please check your connection and try again, or email me directly.');
+            } finally {
+                submitBtn.disabled = false;
+                btnLabel.textContent = 'Send Enquiry';
+            }
+        });
+
+        // Clear individual field errors as the user types
+        form.querySelectorAll('input, select, textarea').forEach(input => {
+            input.addEventListener('input', () => {
+                const wrap = input.closest('.form-field');
+                if (wrap && wrap.classList.contains('has-error')) {
+                    wrap.classList.remove('has-error');
+                    const err = wrap.querySelector('.field-error');
+                    if (err) err.remove();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
